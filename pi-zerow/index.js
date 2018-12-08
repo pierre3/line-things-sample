@@ -1,5 +1,5 @@
-var bleno = require('bleno');
-var onoff = require('onoff');
+const bleno = require('bleno');
+const onoff = require('onoff');
 
 const USER_SERVICE_UUID = '1d9113b9-b790-46cb-a55a-2e666525e0c3';
 const WRITE_CHARACTERISTIC_UUID = 'E9062E71-9E62-4BC6-B0D3-35CDCD9B027B';
@@ -11,8 +11,8 @@ const DEVICE_NAME = 'line-things-device';
 
 console.log(`bleno - ${DEVICE_NAME}`);
 
-var PrimaryService = bleno.PrimaryService;
-var Gpio = onoff.Gpio;
+const PrimaryService = bleno.PrimaryService;
+const Gpio = onoff.Gpio;
 
 let onOff = 0;
 
